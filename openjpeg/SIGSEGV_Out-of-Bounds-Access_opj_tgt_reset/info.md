@@ -29,6 +29,10 @@ SUMMARY: AddressSanitizer: SEGV /home/trylab/Desktop/repo/openjpeg/src/lib/openj
 # PoC
 https://raw.githubusercontent.com/trylab/PoCs/master/openjpeg/SIGSEGV_Out-of-Bounds-Access_opj_tgt_reset/poc.j2k
 
+# Report Timeline
++ 2016-05-06: Ke Liu of Tencent's Xuanwu LAB report issue to OpenJPEG ([#775](https://github.com/uclouvain/openjpeg/issues/775));
++ 2016-05-08: OpenJPEG fixed this issue ([1a8318f](https://github.com/uclouvain/openjpeg/commit/1a8318f6c24623189ecb65e049267c6f2e005c0e));
+
 # Credit
 Ke Liu of Tencent's Xuanwu LAB
 
