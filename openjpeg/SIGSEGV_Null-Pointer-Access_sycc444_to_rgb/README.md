@@ -19,7 +19,7 @@ SUMMARY: AddressSanitizer: SEGV openjpeg/src/bin/common/color.c:115 sycc444_to_r
 ```
 
 # PoC
-https://raw.githubusercontent.com/trylab/PoCs/master/openjpeg/SIGSEGV_sycc444_to_rgb/sycc444_to_rgb.j2k
+https://raw.githubusercontent.com/trylab/PoCs/master/openjpeg/SIGSEGV_Null-Pointer-Access_sycc444_to_rgb/sycc444_to_rgb.j2k
 
 # Credit
 Ke Liu of Tencent's Xuanwu LAB
