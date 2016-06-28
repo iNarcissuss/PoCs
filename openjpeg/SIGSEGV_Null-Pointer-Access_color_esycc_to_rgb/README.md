@@ -20,5 +20,8 @@ SUMMARY: AddressSanitizer: SEGV openjpeg/src/bin/common/color.c:937 color_esycc_
 # PoC
 https://raw.githubusercontent.com/trylab/PoCs/master/openjpeg/SIGSEGV_Null-Pointer-Access_color_esycc_to_rgb/color_esycc_to_rgb.j2k
 
+# Report Timeline
++ 2016-05-25: Ke Liu of Tencent's Xuanwu LAB report issue to OpenJPEG ([#785](https://github.com/uclouvain/openjpeg/issues/785));
+
 # Credit
 Ke Liu of Tencent's Xuanwu LAB
