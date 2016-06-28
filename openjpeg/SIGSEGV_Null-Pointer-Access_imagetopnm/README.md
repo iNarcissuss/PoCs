@@ -20,6 +20,9 @@ SUMMARY: AddressSanitizer: SEGV /home/trylab/Desktop/repo/openjpeg/src/bin/jp2/c
 # PoC
 https://raw.githubusercontent.com/trylab/PoCs/master/openjpeg/SIGSEGV_Null-Pointer-Access_imagetopnm/poc.j2k
 
+# Report Timeline
++ 2016-05-06: Ke Liu of Tencent's Xuanwu LAB report issue to OpenJPEG ([#776](https://github.com/uclouvain/openjpeg/issues/776));
+
 # Credit
 Ke Liu of Tencent's Xuanwu LAB
 
