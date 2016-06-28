@@ -21,5 +21,8 @@ SUMMARY: AddressSanitizer: SEGV ~/Desktop/repo/openjpeg-master/src/bin/common/co
 # PoC
 https://raw.githubusercontent.com/trylab/PoCs/master/openjpeg/SIGSEGV_Null-Pointer-Access_sycc422_to_rgb/sycc422_to_rgb.j2k
 
+# Report Timeline
++ 2016-06-28: Ke Liu of Tencent's Xuanwu LAB report issue to OpenJPEG ([#790](https://github.com/uclouvain/openjpeg/issues/790));
+
 # Credit
 Ke Liu of Tencent's Xuanwu LAB
