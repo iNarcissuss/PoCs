@@ -20,6 +20,7 @@ Master version of OpenJPEG (2016/08/16)
 
 EXCEPTION LOG
 ==============
+```
 ==10074==ERROR: AddressSanitizer: heap-buffer-overflow on address 0xad9370a0 at pc 0xb767ba50 bp 0xbff1ad78 sp 0xbff1ad70
 READ of size 2 at 0xad9370a0 thread T0
     #0 0xb767ba4f in opj_pi_next_cprl src/lib/openjp2/pi.c:541:12
@@ -73,12 +74,13 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
   Left alloca redzone:     ca
   Right alloca redzone:    cb
 ==10074==ABORTING
+```
 
 
 SOURCE CODE
 ==============
 1. OOB read and OOB write exist in function opj_pi_next_cprl, function opj_pi_next_lrcp, opj_pi_next_rlcp, opj_pi_next_rpcl, opj_pi_next_pcrl may also be vulnerable.
-
+```
 static OPJ_BOOL opj_pi_next_cprl(opj_pi_iterator_t * pi) {
     // ...
     for (pi->layno = pi->poc.layno0; pi->layno < pi->poc.layno1; pi->layno++) {
@@ -90,9 +92,10 @@ static OPJ_BOOL opj_pi_next_cprl(opj_pi_iterator_t * pi) {
     // ...
     return OPJ_FALSE;
 }
+```
 
 2. Integer overflow exists in function opj_pi_create_decode.
-
+```
 opj_pi_iterator_t *opj_pi_create_decode(opj_image_t *p_image,
                                         opj_cp_t *p_cp,
                                         OPJ_UINT32 p_tile_no)
@@ -111,3 +114,4 @@ opj_pi_iterator_t *opj_pi_create_decode(opj_image_t *p_image,
         (l_tcp->numlayers +1) * l_step_l, sizeof(OPJ_INT16));   // ----> Integer Overflow!!!
     // ...
 }
+```
